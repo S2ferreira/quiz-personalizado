@@ -1,0 +1,49 @@
+CSS
+
+
+:root {
+    --cor-fundo: #000000;
+    --cor-principal: #121212;
+    --cor-secundaria: #262626; 
+    --cor-destaque: #FFFFFF;
+    --cor-texto: #EDEDED;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+}
